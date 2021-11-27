@@ -1,5 +1,5 @@
 # Yartu Icon Pack
-
+Yartu icon kit using https://www.npmjs.com/package/@vusion/webfonts-generator package for generate font kit. For more information visit there.
 ## Installation
     npm install
 
