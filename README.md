@@ -3,7 +3,10 @@
 ## Installation
     npm install
 
-## Generate Fonts kit
+## Generate Font kit
     npm run build
 
+## Templates
+    /yartu/templates
+        -fonts.css.hbs
 
