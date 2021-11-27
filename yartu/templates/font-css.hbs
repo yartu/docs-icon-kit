@@ -1,33 +1,29 @@
 @font-face {
   /* use !important to prevent issues with browser extensions that change fonts */
-
 	font-family: "{{fontName}}";
 	src: {{{src}}};
 	font-weight: normal;
-    font-style: normal;
-    font-variant: normal;
-	text-transform: none;
-	font-weight: normal;
 	font-style: normal;
 	font-display: block;
-
 }
 
 {{baseSelector}} {
+	font-family: {{fontName}} !important;
 	line-height: 1;
+	speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 {{baseSelector}}:before {
-	font-family: {{fontName}} !important;
-	font-style: normal !important;
-	font-weight: normal !important;
-	font-variant: normal !important;
-	text-transform: none !important;
-	speak: none;
-
-	/* Better Font Rendering =========== */
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
+	--webkit-backface-visibility:hidden;
+    backface-visibility: hidden;
 }
 
 {{#each codepoints}}
