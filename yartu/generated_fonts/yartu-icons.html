@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>yartu-icons</title>
+    <style>
+        
+        body{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            margin: 0;
+			padding: 10px 20px;
+        }
+        .container{
+            max-width: 1440px;
+			padding-top: 56px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        .card{
+            display: inline-block;
+            position: relative;
+            width: 268px;
+            height: 230px;
+            border: 1px solid #E5EBF5;
+            border-radius: 8px;
+            margin: 8px;
+        }
+        .buttons{
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            height: 48px;
+            width: 100%;
+            background: #FFFFFF;
+            text-align: end;
+            border-radius: 8px;
+            vertical-align: middle;
+        }
+        .button {
+            border-radius: 4px;
+            padding: 8px 16px;
+            font-size: 12px;
+            margin: 4px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+        .button-primary{
+            background: #2274A5;
+            color: #EDEDED;
+        }
+        .button-primary:hover{
+            background: #134461;
+            color: #EDEDED;
+        }
+        .buttons span{
+            margin-right: 8px;
+        }
+        .button-outline{
+            border: 1px solid #2274A5;
+            background: none;
+            color: #2274A5;
+        }
+
+        .button-outline:hover{
+            background: #2274A5;
+            color: #EDEDED;
+        }
+
+        .icon-wrapper{
+            display: block;
+            height: calc(100% - 48px);
+            text-align: center;
+        }
+        .icon{
+            display: flex;
+            flex-direction: column;  
+            justify-content: center;
+            align-items: center;
+            font-size: 128px;   
+            height: 100%;
+            background: #E5EBF5;
+            border-radius: 8px 8px 0 0;
+        }
+        .icon-name{
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .icon-code{
+            margin-top: 8px;
+            font-size: 9px;
+        }
+        h1{
+            text-align: center;
+        }
+
+        #snackbar {
+            visibility: hidden; /* Hidden by default. Visible on click */
+            min-width: 250px; /* Set a default minimum width */
+            margin-left: -125px; /* Divide value of min-width by 2 */
+            background-color: #333; /* Black background color */
+            color: #fff; /* White text color */
+            text-align: center; /* Centered text */
+            border-radius: 2px; /* Rounded borders */
+            padding: 16px; /* Padding */
+            position: fixed; /* Sit on top of the screen */
+            z-index: 1; /* Add a z-index if needed */
+            left: 50%; /* Center the snackbar */
+            bottom: 30px; /* 30px from the bottom */
+        }
+        
+        #snackbar.show {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+            animation: fadein 0.5s, fadeout 0.5s 2.5s;
+        }
+
+        @-webkit-keyframes fadein {
+            from {bottom: 0; opacity: 0;}
+            to {bottom: 30px; opacity: 1;}
+        }
+
+        @keyframes fadein {
+            from {bottom: 0; opacity: 0;}
+            to {bottom: 30px; opacity: 1;}
+        }
+
+        @-webkit-keyframes fadeout {
+            from {bottom: 30px; opacity: 1;}
+            to {bottom: 0; opacity: 0;}
+        }
+
+        @keyframes fadeout {
+            from {bottom: 30px; opacity: 1;}
+            to {bottom: 0; opacity: 0;}
+        }
+
+        .yartu-icon {
+			display: inline-block;
+			font-size: 48px;
+		}
+
+		@font-face {
+  /* use !important to prevent issues with browser extensions that change fonts */
+
+	font-family: "yartu-icons";
+	src: url("yartu-icons.eot?a648f161051d73b4613023bafdfad14b?#iefix") format("embedded-opentype"),
+url("yartu-icons.woff?a648f161051d73b4613023bafdfad14b") format("woff"),
+url("yartu-icons.ttf?a648f161051d73b4613023bafdfad14b") format("truetype"),
+url("yartu-icons.svg?a648f161051d73b4613023bafdfad14b#yartu-icons") format("svg");
+	font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+
+}
+
+.yartu-icon {
+	line-height: 1;
+}
+
+.yartu-icon:before {
+	font-family: yartu-icons !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	font-variant: normal !important;
+	text-transform: none !important;
+	speak: none;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.all-repositorys:before {
+	content: "\f101";
+}
+.arrow-down:before {
+	content: "\f102";
+}
+.arrow-right:before {
+	content: "\f103";
+}
+.clients:before {
+	content: "\f104";
+}
+.clock:before {
+	content: "\f105";
+}
+.drive:before {
+	content: "\f106";
+}
+.home:before {
+	content: "\f107";
+}
+.link:before {
+	content: "\f108";
+}
+.repository:before {
+	content: "\f109";
+}
+.shared-with-me:before {
+	content: "\f10a";
+}
+.star:before {
+	content: "\f10b";
+}
+.trash:before {
+	content: "\f10c";
+}
+
+    </style>
+
+</head>
+<body>
+	<h1>yartu-icons</h1>
+   
+   <div class="container">
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yartu-icon all-repositorys"></i>
+                    <span class="icon-name">all-repositorys</span>
+                    <code id=all-repositorys class="icon-code">
+                        <span>&lt;i class="yartu-icon all-repositorys"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('all-repositorys')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yartu-icon arrow-down"></i>
+                    <span class="icon-name">arrow-down</span>
+                    <code id=arrow-down class="icon-code">
+                        <span>&lt;i class="yartu-icon arrow-down"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('arrow-down')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yartu-icon arrow-right"></i>
+                    <span class="icon-name">arrow-right</span>
+                    <code id=arrow-right class="icon-code">
+                        <span>&lt;i class="yartu-icon arrow-right"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('arrow-right')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yartu-icon clients"></i>
+                    <span class="icon-name">clients</span>
+                    <code id=clients class="icon-code">
+                        <span>&lt;i class="yartu-icon clients"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('clients')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yartu-icon clock"></i>
+                    <span class="icon-name">clock</span>
+                    <code id=clock class="icon-code">
+                        <span>&lt;i class="yartu-icon clock"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('clock')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yartu-icon drive"></i>
+                    <span class="icon-name">drive</span>
+                    <code id=drive class="icon-code">
+                        <span>&lt;i class="yartu-icon drive"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('drive')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yartu-icon home"></i>
+                    <span class="icon-name">home</span>
+                    <code id=home class="icon-code">
+                        <span>&lt;i class="yartu-icon home"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('home')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yartu-icon link"></i>
+                    <span class="icon-name">link</span>
+                    <code id=link class="icon-code">
+                        <span>&lt;i class="yartu-icon link"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('link')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yartu-icon repository"></i>
+                    <span class="icon-name">repository</span>
+                    <code id=repository class="icon-code">
+                        <span>&lt;i class="yartu-icon repository"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('repository')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yartu-icon shared-with-me"></i>
+                    <span class="icon-name">shared-with-me</span>
+                    <code id=shared-with-me class="icon-code">
+                        <span>&lt;i class="yartu-icon shared-with-me"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('shared-with-me')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yartu-icon star"></i>
+                    <span class="icon-name">star</span>
+                    <code id=star class="icon-code">
+                        <span>&lt;i class="yartu-icon star"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('star')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yartu-icon trash"></i>
+                    <span class="icon-name">trash</span>
+                    <code id=trash class="icon-code">
+                        <span>&lt;i class="yartu-icon trash"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('trash')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div id="snackbar">Copied</div>
+    </div>
+
+    <script>
+        function CopyToClipboard(id)
+        {
+            var r = document.createRange();
+            r.selectNode(document.getElementById(id));
+            window.getSelection().removeAllRanges();
+            window.getSelection().addRange(r);
+            document.execCommand('copy');
+            window.getSelection().removeAllRanges();
+            var snackbar = document.getElementById("snackbar");
+            snackbar.className = "show";
+            setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
+        }
+    </script>
+
+</body>
+</html>
