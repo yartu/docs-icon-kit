@@ -8,5 +8,14 @@
 
 ## Templates
     /yartu/templates
-        -fonts.css.hbs
+        fonts-css.hbs
+        html.hbs
 
+## Output files
+    /yartu/generated_fonts
+
+## Handlebrakes ( *.hbs )
+    https://handlebarsjs.com/guide/
+
+## Demo file
+    /yartu/generated_fonts/index.html
