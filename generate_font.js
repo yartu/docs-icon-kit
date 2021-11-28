@@ -18,6 +18,9 @@ fs.readdir('yartu/icons', function(err, items) {
     html:true,
     htmlDest: 'yartu/generated_fonts/index.html',
     htmlTemplate: 'yartu/templates/html.hbs',
+    fontHeight: 1000,//this option scale icons to max font size do not change
+    centerHorizontally:true,
+    centerVertically:true,
 
     cssTemplate: 'yartu/templates/font-css.hbs',
     templateOptions: {
@@ -26,15 +29,7 @@ fs.readdir('yartu/icons', function(err, items) {
     },
     types: ['svg', 'ttf', 'woff', 'eot'],
     startCodepoint: 0xF101,
-    formatOptions: {
-      // options to pass specifically to the svgicons2svgfont generator
-      svg: {
-          centerHorizontally:true,
-          centerVertically:true,
-          normalize:true,
-          fontHeight: 1000,//this option scale icons to max font size
-      }
-  }
+    
   }, function (error) {
     if (error) {
       console.log('Fail!', error);

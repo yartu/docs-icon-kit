@@ -2,157 +2,32 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{fontName}}</title>
-    <style>
-        
-        body{
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 0;
-			padding: 10px 20px;
-        }
-        .container{
-            max-width: 1440px;
-			padding-top: 56px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .card{
-            display: inline-block;
-            position: relative;
-            width: 268px;
-            height: 230px;
-            border: 1px solid #E5EBF5;
-            border-radius: 8px;
-            margin: 8px;
-        }
-        .buttons{
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            height: 48px;
-            width: 100%;
-            background: #FFFFFF;
-            text-align: end;
-            border-radius: 8px;
-            vertical-align: middle;
-        }
-        .button {
-            border-radius: 4px;
-            padding: 8px 16px;
-            font-size: 12px;
-            margin: 4px;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        .button-primary{
-            background: #2274A5;
-            color: #EDEDED;
-        }
-        .button-primary:hover{
-            background: #134461;
-            color: #EDEDED;
-        }
-        .buttons span{
-            margin-right: 8px;
-        }
-        .button-outline{
-            border: 1px solid #2274A5;
-            background: none;
-            color: #2274A5;
-        }
-
-        .button-outline:hover{
-            background: #2274A5;
-            color: #EDEDED;
-        }
-
-        .icon-wrapper{
-            display: block;
-            height: calc(100% - 48px);
-            text-align: center;
-        }
-        .icon{
-            display: flex;
-            flex-direction: column;  
-            justify-content: center;
-            align-items: center;
-            font-size: 128px;   
-            height: 100%;
-            background: #E5EBF5;
-            border-radius: 8px 8px 0 0;
-        }
-        .icon-name{
-            font-size: 18px;
-            font-weight: 500;
-        }
-        .icon-code{
-            margin-top: 8px;
-            font-size: 9px;
-        }
-        h1{
-            text-align: center;
-        }
-
-        #snackbar {
-            visibility: hidden; /* Hidden by default. Visible on click */
-            min-width: 250px; /* Set a default minimum width */
-            margin-left: -125px; /* Divide value of min-width by 2 */
-            background-color: #333; /* Black background color */
-            color: #fff; /* White text color */
-            text-align: center; /* Centered text */
-            border-radius: 2px; /* Rounded borders */
-            padding: 16px; /* Padding */
-            position: fixed; /* Sit on top of the screen */
-            z-index: 1; /* Add a z-index if needed */
-            left: 50%; /* Center the snackbar */
-            bottom: 30px; /* 30px from the bottom */
-        }
-        
-        #snackbar.show {
-            visibility: visible;
-            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-            animation: fadein 0.5s, fadeout 0.5s 2.5s;
-        }
-
-        @-webkit-keyframes fadein {
-            from {bottom: 0; opacity: 0;}
-            to {bottom: 30px; opacity: 1;}
-        }
-
-        @keyframes fadein {
-            from {bottom: 0; opacity: 0;}
-            to {bottom: 30px; opacity: 1;}
-        }
-
-        @-webkit-keyframes fadeout {
-            from {bottom: 30px; opacity: 1;}
-            to {bottom: 0; opacity: 0;}
-        }
-
-        @keyframes fadeout {
-            from {bottom: 30px; opacity: 1;}
-            to {bottom: 0; opacity: 0;}
-        }
-
-        {{baseSelector}} {
-			display: inline-block;
-			font-size: 48px;
-		}
-
-		{{{styles}}}
-    </style>
-
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <script src="../assets/js/search.js"></script>
+    <script src="../assets/js/copyToClipBoard.js"></script>
+    <link rel="stylesheet" href="{{fontName}}.css">
 </head>
 <body>
-	<h1>{{fontName}}</h1>
-   
-   <div class="container">
+
+    <div class="hero">
+            <h1>YARTU ICONS</h1>
+        </div>
+    </div>
+
+    <div class="input-container">
+        <input type="text" id="search" onkeyup="search()" placeholder="Search in icons...">
+    </div>
+
+   <div class="container" id="icons" >
        {{#each names}}
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="{{removePeriods ../baseSelector}} {{../classPrefix}}{{this}}"></i>
                     <span class="icon-name">{{this}}</span>
+                    <i class="{{removePeriods ../baseSelector}} {{../classPrefix}}{{this}}"></i>
                     <code id={{this}} class="icon-code">
                         <span>&lt;i class="{{removePeriods ../baseSelector}} {{../classPrefix}}{{this}}"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -169,20 +44,8 @@
         <div id="snackbar">Copied</div>
     </div>
 
-    <script>
-        function CopyToClipboard(id)
-        {
-            var r = document.createRange();
-            r.selectNode(document.getElementById(id));
-            window.getSelection().removeAllRanges();
-            window.getSelection().addRange(r);
-            document.execCommand('copy');
-            window.getSelection().removeAllRanges();
-            var snackbar = document.getElementById("snackbar");
-            snackbar.className = "show";
-            setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
-        }
-    </script>
-
+    <div class="footer">
+        
+    </div>
 </body>
 </html>

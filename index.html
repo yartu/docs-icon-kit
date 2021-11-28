@@ -1,155 +1,208 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./yartu/generated_fonts/yartu-icons.css">
+	<meta charset="UTF-8">
+	<title>yartu-icons</title>
+    <link rel="stylesheet" href="./yartu/assets/css/main.css">
+    <script src="./yartu/assets/js/search.js"></script>
     <style>
-        
-        body{
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            margin: 0;
-			padding: 10px 20px;
-        }
-        .container{
-            max-width: 1440px;
-			padding-top: 56px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .card{
-            display: inline-block;
-            position: relative;
-            width: 268px;
-            height: 230px;
-            border: 1px solid #E5EBF5;
-            border-radius: 8px;
-            margin: 8px;
-        }
-        .buttons{
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            height: 48px;
-            width: 100%;
-            background: #FFFFFF;
-            text-align: end;
-            border-radius: 8px;
-            vertical-align: middle;
-        }
-        .button {
-            border-radius: 4px;
-            padding: 8px 16px;
-            font-size: 12px;
-            margin: 4px;
-            font-weight: 600;
-            cursor: pointer;
-        }
-        .button-primary{
-            background: #2274A5;
-            color: #EDEDED;
-        }
-        .button-primary:hover{
-            background: #134461;
-            color: #EDEDED;
-        }
-        .buttons span{
-            margin-right: 8px;
-        }
-        .button-outline{
-            border: 1px solid #2274A5;
-            background: none;
-            color: #2274A5;
-        }
+        .yi {
+			display: inline-block;
+			font-size: 48px;
+		}
 
-        .button-outline:hover{
-            background: #2274A5;
-            color: #EDEDED;
-        }
+		@font-face {
+  /* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "yartu-icons";
+	src: url("./yartu/generated_fonts/yartu-icons.eot?1580f42441c7cbeb837951d1ba8437bd?#iefix") format("embedded-opentype"),
+url("./yartu/generated_fonts/yartu-icons.woff?1580f42441c7cbeb837951d1ba8437bd") format("woff"),
+url("./yartu/generated_fonts/yartu-icons.ttf?1580f42441c7cbeb837951d1ba8437bd") format("truetype"),
+url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#yartu-icons") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
 
-        .icon-wrapper{
-            display: block;
-            height: calc(100% - 48px);
-            text-align: center;
-        }
-        .icon{
-            display: flex;
-            flex-direction: column;  
-            justify-content: center;
-            align-items: center;
-            font-size: 96px;   
-            height: 100%;
-            background: #E5EBF5;
-            border-radius: 8px 8px 0 0;
-        }
-        .icon-name{
-            font-size: 18px;
-            font-weight: 500;
-        }
-        .icon-code{
-            margin-top: 8px;
-            font-size: 9px;
-        }
-        h1{
-            text-align: center;
-        }
+.yi {
+	font-family: yartu-icons !important;
+	line-height: 1;
+	speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    display: inline-block;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
-        #snackbar {
-            visibility: hidden; /* Hidden by default. Visible on click */
-            min-width: 250px; /* Set a default minimum width */
-            margin-left: -125px; /* Divide value of min-width by 2 */
-            background-color: #333; /* Black background color */
-            color: #fff; /* White text color */
-            text-align: center; /* Centered text */
-            border-radius: 2px; /* Rounded borders */
-            padding: 16px; /* Padding */
-            position: fixed; /* Sit on top of the screen */
-            z-index: 1; /* Add a z-index if needed */
-            left: 50%; /* Center the snackbar */
-            bottom: 30px; /* 30px from the bottom */
-        }
-        
-        #snackbar.show {
-            visibility: visible;
-            -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
-            animation: fadein 0.5s, fadeout 0.5s 2.5s;
-        }
+.yi:before {
+	--webkit-backface-visibility:hidden;
+    backface-visibility: hidden;
+}
 
-        @-webkit-keyframes fadein {
-            from {bottom: 0; opacity: 0;}
-            to {bottom: 30px; opacity: 1;}
-        }
-
-        @keyframes fadein {
-            from {bottom: 0; opacity: 0;}
-            to {bottom: 30px; opacity: 1;}
-        }
-
-        @-webkit-keyframes fadeout {
-            from {bottom: 30px; opacity: 1;}
-            to {bottom: 0; opacity: 0;}
-        }
-
-        @keyframes fadeout {
-            from {bottom: 30px; opacity: 1;}
-            to {bottom: 0; opacity: 0;}
-        }
+.all-repositories:before {
+	content: "\f101";
+}
+.arrow-down:before {
+	content: "\f102";
+}
+.arrow-right:before {
+	content: "\f103";
+}
+.clients:before {
+	content: "\f104";
+}
+.clock:before {
+	content: "\f105";
+}
+.drive:before {
+	content: "\f106";
+}
+.home:before {
+	content: "\f107";
+}
+.link:before {
+	content: "\f108";
+}
+.repository:before {
+	content: "\f109";
+}
+.shared-with-me:before {
+	content: "\f10a";
+}
+.star:before {
+	content: "\f10b";
+}
+.trash:before {
+	content: "\f10c";
+}
 
     </style>
+
 </head>
 <body>
-    <h1>YARTU-ICONS</h1>
-    <div class="container">
+
+      <div class="hero">
+        <div class="container">
+            <h1>Yartu Icons</h1>
+            <input type="text" id="search" onkeyup="search()" placeholder="Search in icons...">
+        </div>
+      </div>
+
+
+   <div class="container" id="icons" >
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yartu-icon home"></i>
-                    <span class="icon-name">Home icon</span>
-                    <code id="home" class="icon-code">
-                        &lt;i class="yartu-icon home"&gt;&lt;/i&gt;
-                    </code>   
+                    <i class="yi all-repositories"></i>
+                    <span class="icon-name">all-repositories</span>
+                    <code id=all-repositories class="icon-code">
+                        <span>&lt;i class="yi all-repositories"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('all-repositories')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yi arrow-down"></i>
+                    <span class="icon-name">arrow-down</span>
+                    <code id=arrow-down class="icon-code">
+                        <span>&lt;i class="yi arrow-down"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('arrow-down')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yi arrow-right"></i>
+                    <span class="icon-name">arrow-right</span>
+                    <code id=arrow-right class="icon-code">
+                        <span>&lt;i class="yi arrow-right"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('arrow-right')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yi clients"></i>
+                    <span class="icon-name">clients</span>
+                    <code id=clients class="icon-code">
+                        <span>&lt;i class="yi clients"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('clients')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yi clock"></i>
+                    <span class="icon-name">clock</span>
+                    <code id=clock class="icon-code">
+                        <span>&lt;i class="yi clock"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('clock')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yi drive"></i>
+                    <span class="icon-name">drive</span>
+                    <code id=drive class="icon-code">
+                        <span>&lt;i class="yi drive"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('drive')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yi home"></i>
+                    <span class="icon-name">home</span>
+                    <code id=home class="icon-code">
+                        <span>&lt;i class="yi home"&gt;&lt;/i&gt;</span> 
+                    </code>
                 </div>  
             </div>
             <div class="buttons">
@@ -159,7 +212,92 @@
                 </span>
             </div>
         </div>
-        <div id="snackbar">Icon Copied</div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yi link"></i>
+                    <span class="icon-name">link</span>
+                    <code id=link class="icon-code">
+                        <span>&lt;i class="yi link"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('link')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yi repository"></i>
+                    <span class="icon-name">repository</span>
+                    <code id=repository class="icon-code">
+                        <span>&lt;i class="yi repository"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('repository')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yi shared-with-me"></i>
+                    <span class="icon-name">shared-with-me</span>
+                    <code id=shared-with-me class="icon-code">
+                        <span>&lt;i class="yi shared-with-me"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('shared-with-me')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yi star"></i>
+                    <span class="icon-name">star</span>
+                    <code id=star class="icon-code">
+                        <span>&lt;i class="yi star"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('star')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon-wrapper">
+                <div  class="icon">
+                    <i class="yi trash"></i>
+                    <span class="icon-name">trash</span>
+                    <code id=trash class="icon-code">
+                        <span>&lt;i class="yi trash"&gt;&lt;/i&gt;</span> 
+                    </code>
+                </div>  
+            </div>
+            <div class="buttons">
+                <span>
+                    <a class="button button-primary">More</a>
+                    <a class="button button-outline" onclick="CopyToClipboard('trash')">Copy</a>
+                </span>
+            </div>
+        </div>
+        <div id="snackbar">Copied</div>
     </div>
 
     <script>
@@ -175,6 +313,7 @@
             snackbar.className = "show";
             setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
         }
-        </script>
+    </script>
+
 </body>
 </html>

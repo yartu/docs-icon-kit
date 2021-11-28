@@ -1,10 +1,10 @@
 @font-face {
   /* use !important to prevent issues with browser extensions that change fonts */
 	font-family: "yartu-icons";
-	src: url("yartu-icons.eot?1fd06a76322f60ec3000606b15ab55bb?#iefix") format("embedded-opentype"),
-url("yartu-icons.woff?1fd06a76322f60ec3000606b15ab55bb") format("woff"),
-url("yartu-icons.ttf?1fd06a76322f60ec3000606b15ab55bb") format("truetype"),
-url("yartu-icons.svg?1fd06a76322f60ec3000606b15ab55bb#yartu-icons") format("svg");
+	src: url("yartu-icons.eot?ac4bcd9db9724b4d6b2dd259b17faef2?#iefix") format("embedded-opentype"),
+url("yartu-icons.woff?ac4bcd9db9724b4d6b2dd259b17faef2") format("woff"),
+url("yartu-icons.ttf?ac4bcd9db9724b4d6b2dd259b17faef2") format("truetype"),
+url("yartu-icons.svg?ac4bcd9db9724b4d6b2dd259b17faef2#yartu-icons") format("svg");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;

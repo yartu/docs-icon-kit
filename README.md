@@ -4,6 +4,24 @@ Yartu icon kit using https://www.npmjs.com/package/@vusion/webfonts-generator pa
 ## Installation
     npm install
 
+## Prepare svg icons
+
+Svg icons should not have a stroke. If the icon pack have a corrupted icon you can convert strokes to fills in different vector editing programs:
+
+## Converting Strokes & Text to Fills
+
+### Adobe Illustrator
+    Select the shapes that you want to convert and then choose Object → Expand. You might need to choose Object → Expand Appearance before you can apply Object → Expand.
+
+### Ink Scape
+    Select the shapes that you want to convert and then choose Path → Stroke to Path.
+
+### Sketch
+    Select the shapes that you want to convert and choose Layer → Convert to Outlines
+
+after that copy all icon svgs to yartu/icons folder. Thats it ready to generate font icons. 
+
+
 ## Generate Font kit
     npm run build
 
