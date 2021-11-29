@@ -1,10 +1,10 @@
 @font-face {
   /* use !important to prevent issues with browser extensions that change fonts */
 	font-family: "yartu-icons";
-	src: url("yartu-icons.eot?0eecc319ca19038e85889a1ca98726a4?#iefix") format("embedded-opentype"),
-url("yartu-icons.woff?0eecc319ca19038e85889a1ca98726a4") format("woff"),
-url("yartu-icons.ttf?0eecc319ca19038e85889a1ca98726a4") format("truetype"),
-url("yartu-icons.svg?0eecc319ca19038e85889a1ca98726a4#yartu-icons") format("svg");
+	src: url("yartu-icons.eot?ac4bcd9db9724b4d6b2dd259b17faef2?#iefix") format("embedded-opentype"),
+url("yartu-icons.woff?ac4bcd9db9724b4d6b2dd259b17faef2") format("woff"),
+url("yartu-icons.ttf?ac4bcd9db9724b4d6b2dd259b17faef2") format("truetype"),
+url("yartu-icons.svg?ac4bcd9db9724b4d6b2dd259b17faef2#yartu-icons") format("svg");
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
@@ -29,291 +29,39 @@ url("yartu-icons.svg?0eecc319ca19038e85889a1ca98726a4#yartu-icons") format("svg"
     backface-visibility: hidden;
 }
 
-.all-repositories copy 2:before {
+.all-repositories:before {
 	content: "\f101";
 }
-.all-repositories copy 3:before {
+.arrow-down:before {
 	content: "\f102";
 }
-.all-repositories copy 4:before {
+.arrow-right:before {
 	content: "\f103";
 }
-.all-repositories copy 5:before {
+.clients:before {
 	content: "\f104";
 }
-.all-repositories copy 6:before {
+.clock:before {
 	content: "\f105";
 }
-.all-repositories copy 7:before {
+.drive:before {
 	content: "\f106";
 }
-.all-repositories copy:before {
+.home:before {
 	content: "\f107";
 }
-.all-repositories:before {
+.link:before {
 	content: "\f108";
 }
-.arrow-down copy 2:before {
+.repository:before {
 	content: "\f109";
 }
-.arrow-down copy 3:before {
+.shared-with-me:before {
 	content: "\f10a";
 }
-.arrow-down copy 4:before {
+.star:before {
 	content: "\f10b";
 }
-.arrow-down copy 5:before {
-	content: "\f10c";
-}
-.arrow-down copy 6:before {
-	content: "\f10d";
-}
-.arrow-down copy 7:before {
-	content: "\f10e";
-}
-.arrow-down copy:before {
-	content: "\f10f";
-}
-.arrow-down:before {
-	content: "\f110";
-}
-.arrow-right copy 2:before {
-	content: "\f111";
-}
-.arrow-right copy 3:before {
-	content: "\f112";
-}
-.arrow-right copy 4:before {
-	content: "\f113";
-}
-.arrow-right copy 5:before {
-	content: "\f114";
-}
-.arrow-right copy 6:before {
-	content: "\f115";
-}
-.arrow-right copy 7:before {
-	content: "\f116";
-}
-.arrow-right copy:before {
-	content: "\f117";
-}
-.arrow-right:before {
-	content: "\f118";
-}
-.clients copy 2:before {
-	content: "\f119";
-}
-.clients copy 3:before {
-	content: "\f11a";
-}
-.clients copy 4:before {
-	content: "\f11b";
-}
-.clients copy 5:before {
-	content: "\f11c";
-}
-.clients copy 6:before {
-	content: "\f11d";
-}
-.clients copy 7:before {
-	content: "\f11e";
-}
-.clients copy:before {
-	content: "\f11f";
-}
-.clients:before {
-	content: "\f120";
-}
-.clock copy 2:before {
-	content: "\f121";
-}
-.clock copy 3:before {
-	content: "\f122";
-}
-.clock copy 4:before {
-	content: "\f123";
-}
-.clock copy 5:before {
-	content: "\f124";
-}
-.clock copy 6:before {
-	content: "\f125";
-}
-.clock copy 7:before {
-	content: "\f126";
-}
-.clock copy:before {
-	content: "\f127";
-}
-.clock:before {
-	content: "\f128";
-}
-.drive copy 2:before {
-	content: "\f129";
-}
-.drive copy 3:before {
-	content: "\f12a";
-}
-.drive copy 4:before {
-	content: "\f12b";
-}
-.drive copy 5:before {
-	content: "\f12c";
-}
-.drive copy 6:before {
-	content: "\f12d";
-}
-.drive copy 7:before {
-	content: "\f12e";
-}
-.drive copy:before {
-	content: "\f12f";
-}
-.drive:before {
-	content: "\f130";
-}
-.home copy 2:before {
-	content: "\f131";
-}
-.home copy 3:before {
-	content: "\f132";
-}
-.home copy 4:before {
-	content: "\f133";
-}
-.home copy 5:before {
-	content: "\f134";
-}
-.home copy 6:before {
-	content: "\f135";
-}
-.home copy 7:before {
-	content: "\f136";
-}
-.home copy:before {
-	content: "\f137";
-}
-.home:before {
-	content: "\f138";
-}
-.link copy 2:before {
-	content: "\f139";
-}
-.link copy 3:before {
-	content: "\f13a";
-}
-.link copy 4:before {
-	content: "\f13b";
-}
-.link copy 5:before {
-	content: "\f13c";
-}
-.link copy 6:before {
-	content: "\f13d";
-}
-.link copy 7:before {
-	content: "\f13e";
-}
-.link copy:before {
-	content: "\f13f";
-}
-.link:before {
-	content: "\f140";
-}
-.repository copy 2:before {
-	content: "\f141";
-}
-.repository copy 3:before {
-	content: "\f142";
-}
-.repository copy 4:before {
-	content: "\f143";
-}
-.repository copy 5:before {
-	content: "\f144";
-}
-.repository copy 6:before {
-	content: "\f145";
-}
-.repository copy 7:before {
-	content: "\f146";
-}
-.repository copy:before {
-	content: "\f147";
-}
-.repository:before {
-	content: "\f148";
-}
-.shared-with-me copy 2:before {
-	content: "\f149";
-}
-.shared-with-me copy 3:before {
-	content: "\f14a";
-}
-.shared-with-me copy 4:before {
-	content: "\f14b";
-}
-.shared-with-me copy 5:before {
-	content: "\f14c";
-}
-.shared-with-me copy 6:before {
-	content: "\f14d";
-}
-.shared-with-me copy 7:before {
-	content: "\f14e";
-}
-.shared-with-me copy:before {
-	content: "\f14f";
-}
-.shared-with-me:before {
-	content: "\f150";
-}
-.star copy 2:before {
-	content: "\f151";
-}
-.star copy 3:before {
-	content: "\f152";
-}
-.star copy 4:before {
-	content: "\f153";
-}
-.star copy 5:before {
-	content: "\f154";
-}
-.star copy 6:before {
-	content: "\f155";
-}
-.star copy 7:before {
-	content: "\f156";
-}
-.star copy:before {
-	content: "\f157";
-}
-.star:before {
-	content: "\f158";
-}
-.trash copy 2:before {
-	content: "\f159";
-}
-.trash copy 3:before {
-	content: "\f15a";
-}
-.trash copy 4:before {
-	content: "\f15b";
-}
-.trash copy 5:before {
-	content: "\f15c";
-}
-.trash copy 6:before {
-	content: "\f15d";
-}
-.trash copy 7:before {
-	content: "\f15e";
-}
-.trash copy:before {
-	content: "\f15f";
-}
 .trash:before {
-	content: "\f160";
+	content: "\f10c";
 }
