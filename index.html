@@ -2,102 +2,31 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>yartu-icons</title>
     <link rel="stylesheet" href="./yartu/assets/css/main.css">
     <script src="./yartu/assets/js/search.js"></script>
-    <style>
-        .yi {
-			display: inline-block;
-			font-size: 48px;
-		}
-
-		@font-face {
-  /* use !important to prevent issues with browser extensions that change fonts */
-	font-family: "yartu-icons";
-	src: url("./yartu/generated_fonts/yartu-icons.eot?1580f42441c7cbeb837951d1ba8437bd?#iefix") format("embedded-opentype"),
-url("./yartu/generated_fonts/yartu-icons.woff?1580f42441c7cbeb837951d1ba8437bd") format("woff"),
-url("./yartu/generated_fonts/yartu-icons.ttf?1580f42441c7cbeb837951d1ba8437bd") format("truetype"),
-url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#yartu-icons") format("svg");
-	font-weight: normal;
-	font-style: normal;
-	font-display: block;
-}
-
-.yi {
-	font-family: yartu-icons !important;
-	line-height: 1;
-	speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-    display: inline-block;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.yi:before {
-	--webkit-backface-visibility:hidden;
-    backface-visibility: hidden;
-}
-
-.all-repositories:before {
-	content: "\f101";
-}
-.arrow-down:before {
-	content: "\f102";
-}
-.arrow-right:before {
-	content: "\f103";
-}
-.clients:before {
-	content: "\f104";
-}
-.clock:before {
-	content: "\f105";
-}
-.drive:before {
-	content: "\f106";
-}
-.home:before {
-	content: "\f107";
-}
-.link:before {
-	content: "\f108";
-}
-.repository:before {
-	content: "\f109";
-}
-.shared-with-me:before {
-	content: "\f10a";
-}
-.star:before {
-	content: "\f10b";
-}
-.trash:before {
-	content: "\f10c";
-}
-
-    </style>
-
+    <script src="./yartu/assets/js/copyToClipBoard.js"></script>
+    <link rel="stylesheet" href="./yartu/generated_fonts/yartu-icons.css">
 </head>
 <body>
 
-      <div class="hero">
-        <div class="container">
-            <h1>Yartu Icons</h1>
-            <input type="text" id="search" onkeyup="search()" placeholder="Search in icons...">
+    <div class="hero">
+            <h1>YARTU ICONS</h1>
         </div>
-      </div>
+    </div>
 
+    <div class="input-container">
+        <input type="text" id="search" onkeyup="search()" placeholder="Search in icons...">
+    </div>
 
    <div class="container" id="icons" >
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yi all-repositories"></i>
                     <span class="icon-name">all-repositories</span>
+                    <i class="yi all-repositories"></i>
                     <code id=all-repositories class="icon-code">
                         <span>&lt;i class="yi all-repositories"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -113,8 +42,8 @@ url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#ya
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yi arrow-down"></i>
                     <span class="icon-name">arrow-down</span>
+                    <i class="yi arrow-down"></i>
                     <code id=arrow-down class="icon-code">
                         <span>&lt;i class="yi arrow-down"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -130,8 +59,8 @@ url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#ya
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yi arrow-right"></i>
                     <span class="icon-name">arrow-right</span>
+                    <i class="yi arrow-right"></i>
                     <code id=arrow-right class="icon-code">
                         <span>&lt;i class="yi arrow-right"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -147,8 +76,8 @@ url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#ya
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yi clients"></i>
                     <span class="icon-name">clients</span>
+                    <i class="yi clients"></i>
                     <code id=clients class="icon-code">
                         <span>&lt;i class="yi clients"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -164,8 +93,8 @@ url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#ya
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yi clock"></i>
                     <span class="icon-name">clock</span>
+                    <i class="yi clock"></i>
                     <code id=clock class="icon-code">
                         <span>&lt;i class="yi clock"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -181,8 +110,8 @@ url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#ya
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yi drive"></i>
                     <span class="icon-name">drive</span>
+                    <i class="yi drive"></i>
                     <code id=drive class="icon-code">
                         <span>&lt;i class="yi drive"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -198,8 +127,8 @@ url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#ya
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yi home"></i>
                     <span class="icon-name">home</span>
+                    <i class="yi home"></i>
                     <code id=home class="icon-code">
                         <span>&lt;i class="yi home"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -215,8 +144,8 @@ url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#ya
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yi link"></i>
                     <span class="icon-name">link</span>
+                    <i class="yi link"></i>
                     <code id=link class="icon-code">
                         <span>&lt;i class="yi link"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -232,8 +161,8 @@ url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#ya
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yi repository"></i>
                     <span class="icon-name">repository</span>
+                    <i class="yi repository"></i>
                     <code id=repository class="icon-code">
                         <span>&lt;i class="yi repository"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -249,8 +178,8 @@ url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#ya
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yi shared-with-me"></i>
                     <span class="icon-name">shared-with-me</span>
+                    <i class="yi shared-with-me"></i>
                     <code id=shared-with-me class="icon-code">
                         <span>&lt;i class="yi shared-with-me"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -266,8 +195,8 @@ url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#ya
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yi star"></i>
                     <span class="icon-name">star</span>
+                    <i class="yi star"></i>
                     <code id=star class="icon-code">
                         <span>&lt;i class="yi star"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -283,8 +212,8 @@ url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#ya
         <div class="card">
             <div class="icon-wrapper">
                 <div  class="icon">
-                    <i class="yi trash"></i>
                     <span class="icon-name">trash</span>
+                    <i class="yi trash"></i>
                     <code id=trash class="icon-code">
                         <span>&lt;i class="yi trash"&gt;&lt;/i&gt;</span> 
                     </code>
@@ -300,20 +229,8 @@ url("./yartu/generated_fonts/yartu-icons.svg?1580f42441c7cbeb837951d1ba8437bd#ya
         <div id="snackbar">Copied</div>
     </div>
 
-    <script>
-        function CopyToClipboard(id)
-        {
-            var r = document.createRange();
-            r.selectNode(document.getElementById(id));
-            window.getSelection().removeAllRanges();
-            window.getSelection().addRange(r);
-            document.execCommand('copy');
-            window.getSelection().removeAllRanges();
-            var snackbar = document.getElementById("snackbar");
-            snackbar.className = "show";
-            setTimeout(function(){ snackbar.className = snackbar.className.replace("show", ""); }, 3000);
-        }
-    </script>
-
+    <div class="footer">
+        
+    </div>
 </body>
 </html>

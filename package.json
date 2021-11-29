@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "node generate_font.js"
+    "generate": "node generate_font.js"
   },
   "devDependencies": {
     "@vusion/webfonts-generator": "^0.8.0"

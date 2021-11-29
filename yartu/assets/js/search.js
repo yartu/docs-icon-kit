@@ -1,7 +1,7 @@
 
 function search() {
   // Declare variables
-  var input, filter, ul, li, a, i, txtValue;
+  var input, filter, i;
   input = document.getElementById('search');
   filter = input.value.toUpperCase();
   iconsContainer = document.getElementsByClassName("card");
