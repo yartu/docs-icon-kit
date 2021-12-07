@@ -23,7 +23,7 @@ after that copy all icon svgs to yartu/icons folder. Thats it ready to generate 
 
 
 ## Generate Font kit
-    npm run build
+    npm run generate
 
 ## Usage
 

@@ -116,12 +116,9 @@ body{
     margin: auto;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
-.hero h1{
-    font-weight: 900;
-    color: #EDEDED;
-    margin-top: 0; 
-    padding-top: 32px;
-    font-size: 80px;
+.hero img{
+    margin: 16px;
+    width: 30%;
 }
 
 .input-container{
