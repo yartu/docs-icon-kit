@@ -1,28 +1,28 @@
 const webfontsGenerator = require('@vusion/webfonts-generator');
 const fs = require('fs');
 
-fs.readdir('yartu/icons', function(err, items) {
+fs.readdir('icons/', function(err, items) {
   if (err) {
     console.log('cant read directory');
   }
   const files = items.filter((i) => i.toLowerCase().endsWith('.svg')).map(
-    (i) => 'yartu/icons/'+i);
+    (i) => 'icons/'+i);
 
   webfontsGenerator({
     files: files,
-    dest: 'yartu/generated_fonts/',
+    dest: './',
     fontName: 'yartu-icons',
     
     // https://github.com/nfroidure/svgicons2svgfont options
     normalize: true,
     html:true,
-    htmlDest: 'yartu/generated_fonts/index.html',
-    htmlTemplate: 'yartu/templates/html.hbs',
-    fontHeight: 1000,//this option scale icons to max font size do not change
+    htmlDest: './index.html',
+    htmlTemplate: './templates/html.hbs',
+    fontHeight: 900,//this option scale icons to max font size do not change
     centerHorizontally:true,
     centerVertically:true,
 
-    cssTemplate: 'yartu/templates/font-css.hbs',
+    cssTemplate: './templates/font-css.hbs',
     templateOptions: {
       classPrefix: '',
       baseSelector: '.yi'

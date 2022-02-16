@@ -1,8 +1,11 @@
 {
   "scripts": {
-    "generate": "node generate_font.js"
+    "generate": "node generate_font.js",
+    "twatch": "npx tailwindcss -i ./src/input.css -o ./assets/css/output.css --watch",
+    "tgenerate": "npx tailwindcss -i ./src/input.css -o ./assets/css/output.css --minify"
   },
   "devDependencies": {
-    "@vusion/webfonts-generator": "^0.8.0"
+    "@vusion/webfonts-generator": "^0.8.0",
+    "tailwindcss": "^3.0.22"
   }
 }
