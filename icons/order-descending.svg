@@ -1,4 +1,13 @@
-<svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M5.104 7L8.104 3L11.104 7L5.104 7Z" fill="#9AA1B4"/>
-<path d="M5.104 9L8.104 13L11.104 9L5.104 9Z" fill="#394C66"/>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 17 16" style="enable-background:new 0 0 17 16;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#394C66;}
+	.st1{fill:#9AA1B4;}
+</style>
+<g>
+	<path class="st0" d="M11.5,9l-3,4l-3-4H11.5z"/>
+	<path class="st1" d="M11.5,7l-3-4l-3,4H11.5z M10.4,6.5H6.6l1.9-2.7L10.4,6.5z"/>
+</g>
 </svg>
