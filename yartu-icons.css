@@ -1,7 +1,6 @@
 @font-face {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 
-  "yartu-icons";
+  font-family: "yartu-icons";
   src: url("yartu-icons.eot?f8ecffc96e7acead2a469421cae51de4?#iefix") format("embedded-opentype"),
 url("yartu-icons.woff?f8ecffc96e7acead2a469421cae51de4") format("woff"),
 url("yartu-icons.ttf?f8ecffc96e7acead2a469421cae51de4") format("truetype"),
