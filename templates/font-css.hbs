@@ -1,14 +1,14 @@
 @font-face {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "{{fontName}}";
-  src: {{{src}}};
+  font-family: "{{ fontName }}";
+  src: {{{ src }}};
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
-{{baseSelector}} {
-  font-family: {{fontName}} !important;
+{{ baseSelector }} {
+  font-family: {{ fontName }} !important;
   line-height: 1;
   speak: none;
   font-style: normal;
@@ -22,12 +22,12 @@
 }
 
 {{baseSelector}}:before {
-	--webkit-backface-visibility:hidden;
+  --webkit-backface-visibility:hidden;
   backface-visibility: hidden;
 }
 
 {{#each codepoints}}
-.{{../classPrefix}}{{@key}}:before {
-	content: "\\{{this}}";
+.{{ ../classPrefix }}{{ @key }}:before {
+  content: "\\{{ this }}";
 }
 {{/each}}
