@@ -31,36 +31,47 @@ after that copy all icon svgs to yartu/icons folder. Thats it ready to generate 
 
     Generated files is under the down below path
 
-        /yartu/generated_fonts/
+        /src/generated-font-icons/
+        /src/generated-colored-icons/
 
-1. Import css file in your html
-
-        <link rel="stylesheet" href="your-project-assets-path/yartu-icons.css">
+1. Import css files in your html
+        
+        <link rel="stylesheet" href="your-project-path/yartu-icons.css">
+        <link rel="stylesheet" href="your-project-path/yartu-colored-icons.css">
 
 1. Icon usage
-
+    ### For font icons
+    
         <i class="yi arrow-right"></i>
+    ### For colored icons
+    
+        <i class="ci-empty-created-links"></i>
 
 ## Templates
 Font kit css and html handlebars templates destination in down below 
 
-    /yartu/templates
-        fonts-css.hbs
-        html.hbs
+    src/templates
 
 ## Output files
-Output files under the /yartu/generated_fonts/ path and this path includes this files.
+### Font icons output files
+Output files under the /src/generated-font-icons/ path and this path includes this files.
     
         - yartu-icons.css
         - yartu-icons.eot
         - yartu-icons.svg
         - yartu-icons.ttf
         - yartu-icons.woff
+    
+### Colored icons output files
+    Output files under the /src/generated-colored-icons/ path and this path includes this files and folders.
+        - colored-icons/svgs/
+        - yartu-colored-icon-kit.css
 
 ## Handlebars ( *.hbs )
 Handlebars is a simple templating language. It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions. For more information please visit https://handlebarsjs.com/guide/
 
 ## Demo file
-Demo file is in the
+Demo files destinations down below
 
-    /yartu/generated_fonts/index.html
+    /src/views/colored-icons/index.html
+    /src/views/font-icons/index.html

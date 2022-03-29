@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./templates/*.hbs", "./assets/index.css"],
+  content: ["./src/templates/**/*.hbs"],
   theme: {
     extend: {
     },

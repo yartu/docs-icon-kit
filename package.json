@@ -1,8 +1,7 @@
 {
   "scripts": {
-    "generate": "node generate_font.js",
-    "twatch": "npx tailwindcss -i ./src/input.css -o ./assets/css/output.css --watch",
-    "tgenerate": "npx tailwindcss -i ./src/input.css -o ./assets/css/output.css --minify"
+    "generate": "node generate-colored-icons.js && node generate-font.js && npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --minify",
+    "watch": "npx tailwindcss -i ./src/assets/css/input.css -o ./assets/css/output.css --watch"
   },
   "devDependencies": {
     "@vusion/webfonts-generator": "^0.8.0",

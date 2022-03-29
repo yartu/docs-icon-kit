@@ -1,0 +1,656 @@
+.ci-added-devices::before {
+    content: '';
+	background: url("./colored-icons-svgs/added-devices.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-archive::before {
+    content: '';
+	background: url("./colored-icons-svgs/archive.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-audio::before {
+    content: '';
+	background: url("./colored-icons-svgs/audio.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-calendar::before {
+    content: '';
+	background: url("./colored-icons-svgs/calendar.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-cloudy::before {
+    content: '';
+	background: url("./colored-icons-svgs/cloudy.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-conference::before {
+    content: '';
+	background: url("./colored-icons-svgs/conference.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-contact::before {
+    content: '';
+	background: url("./colored-icons-svgs/contact.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-doc::before {
+    content: '';
+	background: url("./colored-icons-svgs/doc.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-dont-have-notifications::before {
+    content: '';
+	background: url("./colored-icons-svgs/dont-have-notifications.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-drag-drop::before {
+    content: '';
+	background: url("./colored-icons-svgs/drag-drop.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-drive::before {
+    content: '';
+	background: url("./colored-icons-svgs/drive.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-email::before {
+    content: '';
+	background: url("./colored-icons-svgs/email.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-empty-created-links::before {
+    content: '';
+	background: url("./colored-icons-svgs/empty-created-links.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-file::before {
+    content: '';
+	background: url("./colored-icons-svgs/file.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-fog::before {
+    content: '';
+	background: url("./colored-icons-svgs/fog.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-folder-gradient::before {
+    content: '';
+	background: url("./colored-icons-svgs/folder-gradient.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-folder-shared-by-me::before {
+    content: '';
+	background: url("./colored-icons-svgs/folder-shared-by-me.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-folder::before {
+    content: '';
+	background: url("./colored-icons-svgs/folder.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-frequent-board::before {
+    content: '';
+	background: url("./colored-icons-svgs/frequent-board.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-frequently::before {
+    content: '';
+	background: url("./colored-icons-svgs/frequently.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-hail::before {
+    content: '';
+	background: url("./colored-icons-svgs/hail.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-home::before {
+    content: '';
+	background: url("./colored-icons-svgs/home.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-image::before {
+    content: '';
+	background: url("./colored-icons-svgs/image.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-mail-selected::before {
+    content: '';
+	background: url("./colored-icons-svgs/mail-selected.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-need-access-permission::before {
+    content: '';
+	background: url("./colored-icons-svgs/need-access-permission.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-activity::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-activity.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-board::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-board.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-canceled-conference::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-canceled-conference.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-comment::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-comment.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-contact::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-contact.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-email-contact::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-email-contact.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-event::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-event.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-finished-conference::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-finished-conference.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-found-mail::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-found-mail.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-found-trash::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-found-trash.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-mail-selected::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-mail-selected.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-notes-found::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-notes-found.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-notes::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-notes.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-ongoing-conference::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-ongoing-conference.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-recording::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-recording.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-repo::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-repo.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-report::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-report.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-shared-note::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-shared-note.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-shared-projects::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-shared-projects.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-sticky-notes::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-sticky-notes.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-task::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-task.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-thread::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-thread.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-no-upcoming-conference::before {
+    content: '';
+	background: url("./colored-icons-svgs/no-upcoming-conference.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-note-app::before {
+    content: '';
+	background: url("./colored-icons-svgs/note-app.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-note::before {
+    content: '';
+	background: url("./colored-icons-svgs/note.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-notebook::before {
+    content: '';
+	background: url("./colored-icons-svgs/notebook.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-pdf::before {
+    content: '';
+	background: url("./colored-icons-svgs/pdf.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-ppt::before {
+    content: '';
+	background: url("./colored-icons-svgs/ppt.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-project::before {
+    content: '';
+	background: url("./colored-icons-svgs/project.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-rain-drop::before {
+    content: '';
+	background: url("./colored-icons-svgs/rain-drop.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-recent-project::before {
+    content: '';
+	background: url("./colored-icons-svgs/recent-project.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-recently-assigned::before {
+    content: '';
+	background: url("./colored-icons-svgs/recently-assigned.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-recently::before {
+    content: '';
+	background: url("./colored-icons-svgs/recently.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-repo::before {
+    content: '';
+	background: url("./colored-icons-svgs/repo.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-repository::before {
+    content: '';
+	background: url("./colored-icons-svgs/repository.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-request-file::before {
+    content: '';
+	background: url("./colored-icons-svgs/request-file.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-search-no-result::before {
+    content: '';
+	background: url("./colored-icons-svgs/search-no-result.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-select-item::before {
+    content: '';
+	background: url("./colored-icons-svgs/select-item.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-shared-by-me::before {
+    content: '';
+	background: url("./colored-icons-svgs/shared-by-me.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-shared-by-you::before {
+    content: '';
+	background: url("./colored-icons-svgs/shared-by-you.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-shared-folder::before {
+    content: '';
+	background: url("./colored-icons-svgs/shared-folder.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-shared-with-me::before {
+    content: '';
+	background: url("./colored-icons-svgs/shared-with-me.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-shared-with-you::before {
+    content: '';
+	background: url("./colored-icons-svgs/shared-with-you.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-snowy::before {
+    content: '';
+	background: url("./colored-icons-svgs/snowy.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-starred-project::before {
+    content: '';
+	background: url("./colored-icons-svgs/starred-project.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-starred::before {
+    content: '';
+	background: url("./colored-icons-svgs/starred.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-storage::before {
+    content: '';
+	background: url("./colored-icons-svgs/storage.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-sunny::before {
+    content: '';
+	background: url("./colored-icons-svgs/sunny.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-trash::before {
+    content: '';
+	background: url("./colored-icons-svgs/trash.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-unlisted-file::before {
+    content: '';
+	background: url("./colored-icons-svgs/unlisted-file.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-upcoming-deadline::before {
+    content: '';
+	background: url("./colored-icons-svgs/upcoming-deadline.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-video::before {
+    content: '';
+	background: url("./colored-icons-svgs/video.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-wind::before {
+    content: '';
+	background: url("./colored-icons-svgs/wind.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-yartu-doc::before {
+    content: '';
+	background: url("./colored-icons-svgs/yartu-doc.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-yartu-ppt::before {
+    content: '';
+	background: url("./colored-icons-svgs/yartu-ppt.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-yartu-sheet::before {
+    content: '';
+	background: url("./colored-icons-svgs/yartu-sheet.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-zip::before {
+    content: '';
+	background: url("./colored-icons-svgs/zip.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}

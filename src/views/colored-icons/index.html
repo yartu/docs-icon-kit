@@ -1,0 +1,2692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title></title> 
+  <link rel="shortcut icon" href="/src/assets/logo/yartu-logo-shape.png" type="image/x-icon">
+  <link rel="stylesheet" href="/src/assets/css/output.css">
+  <link rel="stylesheet" href="/src/assets/css/index.css">
+  <link rel="stylesheet" href="/src/generated-colored-icons/yartu-colored-icons.css">
+  <link rel="stylesheet" href="/src/generated-font-icons/yartu-icons.css">
+</head>
+<body>
+  
+  <div class="h-screen flex flex-wrap">
+
+    <div id="header" class="fixed z-10 bg-white top-0 self-start w-full pl-24 pr-[26rem] p-7 border border-gray-200">
+      <div class="flex flex-row flex-wrap items-center">
+        <div>
+          <img class="h-10" src="/src/assets/logo/yartu-logo-horizontal.svg" alt="logo">
+        </div>
+        <div class="flex-1 px-7 text-center">
+          <div class="relative inline-block w-full">
+            <div class="absolute top-0 bottom-0 my-auto h-14 w-14 flex items-center justify-center text-gray-400">
+              <i class="yi search"></i>
+            </div>
+            <input class="w-full h-12 rounded-xl pl-14 focus:border-blue-500 active:border-blue-500 border" type="text" id="search" onkeyup="search()" placeholder="Search in icons...">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-slate-100 flex-1 pt-28 pl-7 pr-96">
+      <div class="flex flex-wrap flex-col gap-6 p-7">
+        <div class="flex flex-wrap gap-6 justify-center">
+          <div id="item-added-devices" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-added-devices"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-added-devices">ci-added-devices</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-added-devices')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-added-devices">&lt;i class="ci-added-devices"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-added-devices')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-archive" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-archive"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-archive">ci-archive</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-archive')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-archive">&lt;i class="ci-archive"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-archive')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-audio" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-audio"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-audio">ci-audio</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-audio')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-audio">&lt;i class="ci-audio"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-audio')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-calendar" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-calendar"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-calendar">ci-calendar</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-calendar')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-calendar">&lt;i class="ci-calendar"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-calendar')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-cloudy" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-cloudy"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-cloudy">ci-cloudy</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-cloudy')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-cloudy">&lt;i class="ci-cloudy"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-cloudy')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-conference" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-conference"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-conference">ci-conference</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-conference')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-conference">&lt;i class="ci-conference"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-conference')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-contact" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-contact"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-contact">ci-contact</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-contact')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-contact">&lt;i class="ci-contact"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-contact')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-doc" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-doc"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-doc">ci-doc</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-doc')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-doc">&lt;i class="ci-doc"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-doc')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-dont-have-notifications" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-dont-have-notifications"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-dont-have-notifications">ci-dont-have-notifications</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-dont-have-notifications')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-dont-have-notifications">&lt;i class="ci-dont-have-notifications"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-dont-have-notifications')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-drag-drop" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-drag-drop"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-drag-drop">ci-drag-drop</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-drag-drop')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-drag-drop">&lt;i class="ci-drag-drop"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-drag-drop')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-drive" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-drive"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-drive">ci-drive</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-drive')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-drive">&lt;i class="ci-drive"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-drive')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-email" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-email"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-email">ci-email</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-email')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-email">&lt;i class="ci-email"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-email')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-empty-created-links" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-empty-created-links"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-empty-created-links">ci-empty-created-links</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-empty-created-links')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-empty-created-links">&lt;i class="ci-empty-created-links"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-empty-created-links')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-file" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-file"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-file">ci-file</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-file')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-file">&lt;i class="ci-file"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-file')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-fog" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-fog"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-fog">ci-fog</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-fog')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-fog">&lt;i class="ci-fog"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-fog')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-folder-gradient" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-folder-gradient"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-folder-gradient">ci-folder-gradient</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-folder-gradient')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-folder-gradient">&lt;i class="ci-folder-gradient"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-folder-gradient')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-folder-shared-by-me" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-folder-shared-by-me"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-folder-shared-by-me">ci-folder-shared-by-me</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-folder-shared-by-me')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-folder-shared-by-me">&lt;i class="ci-folder-shared-by-me"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-folder-shared-by-me')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-folder" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-folder"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-folder">ci-folder</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-folder')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-folder">&lt;i class="ci-folder"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-folder')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-frequent-board" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-frequent-board"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-frequent-board">ci-frequent-board</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-frequent-board')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-frequent-board">&lt;i class="ci-frequent-board"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-frequent-board')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-frequently" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-frequently"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-frequently">ci-frequently</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-frequently')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-frequently">&lt;i class="ci-frequently"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-frequently')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-hail" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-hail"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-hail">ci-hail</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-hail')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-hail">&lt;i class="ci-hail"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-hail')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-home" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-home"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-home">ci-home</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-home')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-home">&lt;i class="ci-home"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-home')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-image" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-image"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-image">ci-image</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-image')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-image">&lt;i class="ci-image"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-image')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-mail-selected" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-mail-selected"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-mail-selected">ci-mail-selected</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-mail-selected')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-mail-selected">&lt;i class="ci-mail-selected"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-mail-selected')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-need-access-permission" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-need-access-permission"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-need-access-permission">ci-need-access-permission</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-need-access-permission')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-need-access-permission">&lt;i class="ci-need-access-permission"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-need-access-permission')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-activity" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-activity"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-activity">ci-no-activity</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-activity')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-activity">&lt;i class="ci-no-activity"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-activity')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-board" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-board"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-board">ci-no-board</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-board')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-board">&lt;i class="ci-no-board"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-board')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-canceled-conference" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-canceled-conference"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-canceled-conference">ci-no-canceled-conference</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-canceled-conference')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-canceled-conference">&lt;i class="ci-no-canceled-conference"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-canceled-conference')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-comment" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-comment"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-comment">ci-no-comment</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-comment')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-comment">&lt;i class="ci-no-comment"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-comment')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-contact" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-contact"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-contact">ci-no-contact</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-contact')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-contact">&lt;i class="ci-no-contact"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-contact')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-email-contact" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-email-contact"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-email-contact">ci-no-email-contact</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-email-contact')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-email-contact">&lt;i class="ci-no-email-contact"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-email-contact')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-event" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-event"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-event">ci-no-event</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-event')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-event">&lt;i class="ci-no-event"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-event')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-finished-conference" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-finished-conference"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-finished-conference">ci-no-finished-conference</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-finished-conference')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-finished-conference">&lt;i class="ci-no-finished-conference"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-finished-conference')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-found-mail" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-found-mail"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-found-mail">ci-no-found-mail</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-found-mail')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-found-mail">&lt;i class="ci-no-found-mail"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-found-mail')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-found-trash" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-found-trash"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-found-trash">ci-no-found-trash</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-found-trash')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-found-trash">&lt;i class="ci-no-found-trash"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-found-trash')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-mail-selected" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-mail-selected"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-mail-selected">ci-no-mail-selected</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-mail-selected')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-mail-selected">&lt;i class="ci-no-mail-selected"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-mail-selected')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-notes-found" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-notes-found"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-notes-found">ci-no-notes-found</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-notes-found')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-notes-found">&lt;i class="ci-no-notes-found"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-notes-found')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-notes" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-notes"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-notes">ci-no-notes</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-notes')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-notes">&lt;i class="ci-no-notes"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-notes')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-ongoing-conference" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-ongoing-conference"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-ongoing-conference">ci-no-ongoing-conference</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-ongoing-conference')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-ongoing-conference">&lt;i class="ci-no-ongoing-conference"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-ongoing-conference')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-recording" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-recording"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-recording">ci-no-recording</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-recording')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-recording">&lt;i class="ci-no-recording"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-recording')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-repo" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-repo"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-repo">ci-no-repo</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-repo')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-repo">&lt;i class="ci-no-repo"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-repo')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-report" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-report"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-report">ci-no-report</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-report')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-report">&lt;i class="ci-no-report"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-report')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-shared-note" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-shared-note"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-shared-note">ci-no-shared-note</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-shared-note')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-shared-note">&lt;i class="ci-no-shared-note"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-shared-note')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-shared-projects" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-shared-projects"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-shared-projects">ci-no-shared-projects</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-shared-projects')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-shared-projects">&lt;i class="ci-no-shared-projects"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-shared-projects')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-sticky-notes" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-sticky-notes"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-sticky-notes">ci-no-sticky-notes</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-sticky-notes')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-sticky-notes">&lt;i class="ci-no-sticky-notes"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-sticky-notes')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-task" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-task"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-task">ci-no-task</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-task')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-task">&lt;i class="ci-no-task"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-task')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-thread" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-thread"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-thread">ci-no-thread</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-thread')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-thread">&lt;i class="ci-no-thread"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-thread')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-no-upcoming-conference" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-no-upcoming-conference"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-no-upcoming-conference">ci-no-upcoming-conference</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-no-upcoming-conference')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-no-upcoming-conference">&lt;i class="ci-no-upcoming-conference"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-no-upcoming-conference')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-note-app" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-note-app"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-note-app">ci-note-app</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-note-app')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-note-app">&lt;i class="ci-note-app"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-note-app')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-note" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-note"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-note">ci-note</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-note')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-note">&lt;i class="ci-note"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-note')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-notebook" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-notebook"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-notebook">ci-notebook</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-notebook')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-notebook">&lt;i class="ci-notebook"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-notebook')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-pdf" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-pdf"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-pdf">ci-pdf</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-pdf')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-pdf">&lt;i class="ci-pdf"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-pdf')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-ppt" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-ppt"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-ppt">ci-ppt</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-ppt')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-ppt">&lt;i class="ci-ppt"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-ppt')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-project" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-project"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-project">ci-project</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-project')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-project">&lt;i class="ci-project"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-project')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-rain-drop" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-rain-drop"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-rain-drop">ci-rain-drop</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-rain-drop')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-rain-drop">&lt;i class="ci-rain-drop"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-rain-drop')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-recent-project" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-recent-project"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-recent-project">ci-recent-project</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-recent-project')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-recent-project">&lt;i class="ci-recent-project"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-recent-project')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-recently-assigned" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-recently-assigned"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-recently-assigned">ci-recently-assigned</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-recently-assigned')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-recently-assigned">&lt;i class="ci-recently-assigned"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-recently-assigned')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-recently" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-recently"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-recently">ci-recently</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-recently')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-recently">&lt;i class="ci-recently"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-recently')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-repo" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-repo"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-repo">ci-repo</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-repo')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-repo">&lt;i class="ci-repo"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-repo')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-repository" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-repository"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-repository">ci-repository</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-repository')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-repository">&lt;i class="ci-repository"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-repository')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-request-file" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-request-file"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-request-file">ci-request-file</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-request-file')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-request-file">&lt;i class="ci-request-file"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-request-file')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-search-no-result" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-search-no-result"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-search-no-result">ci-search-no-result</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-search-no-result')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-search-no-result">&lt;i class="ci-search-no-result"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-search-no-result')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-select-item" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-select-item"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-select-item">ci-select-item</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-select-item')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-select-item">&lt;i class="ci-select-item"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-select-item')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-shared-by-me" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-shared-by-me"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-shared-by-me">ci-shared-by-me</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-shared-by-me')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-shared-by-me">&lt;i class="ci-shared-by-me"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-shared-by-me')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-shared-by-you" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-shared-by-you"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-shared-by-you">ci-shared-by-you</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-shared-by-you')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-shared-by-you">&lt;i class="ci-shared-by-you"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-shared-by-you')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-shared-folder" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-shared-folder"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-shared-folder">ci-shared-folder</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-shared-folder')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-shared-folder">&lt;i class="ci-shared-folder"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-shared-folder')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-shared-with-me" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-shared-with-me"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-shared-with-me">ci-shared-with-me</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-shared-with-me')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-shared-with-me">&lt;i class="ci-shared-with-me"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-shared-with-me')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-shared-with-you" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-shared-with-you"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-shared-with-you">ci-shared-with-you</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-shared-with-you')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-shared-with-you">&lt;i class="ci-shared-with-you"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-shared-with-you')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-snowy" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-snowy"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-snowy">ci-snowy</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-snowy')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-snowy">&lt;i class="ci-snowy"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-snowy')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-starred-project" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-starred-project"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-starred-project">ci-starred-project</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-starred-project')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-starred-project">&lt;i class="ci-starred-project"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-starred-project')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-starred" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-starred"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-starred">ci-starred</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-starred')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-starred">&lt;i class="ci-starred"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-starred')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-storage" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-storage"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-storage">ci-storage</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-storage')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-storage">&lt;i class="ci-storage"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-storage')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-sunny" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-sunny"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-sunny">ci-sunny</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-sunny')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-sunny">&lt;i class="ci-sunny"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-sunny')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-trash" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-trash"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-trash">ci-trash</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-trash')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-trash">&lt;i class="ci-trash"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-trash')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-unlisted-file" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-unlisted-file"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-unlisted-file">ci-unlisted-file</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-unlisted-file')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-unlisted-file">&lt;i class="ci-unlisted-file"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-unlisted-file')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-upcoming-deadline" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-upcoming-deadline"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-upcoming-deadline">ci-upcoming-deadline</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-upcoming-deadline')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-upcoming-deadline">&lt;i class="ci-upcoming-deadline"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-upcoming-deadline')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-video" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-video"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-video">ci-video</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-video')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-video">&lt;i class="ci-video"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-video')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-wind" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-wind"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-wind">ci-wind</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-wind')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-wind">&lt;i class="ci-wind"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-wind')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-yartu-doc" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-yartu-doc"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-yartu-doc">ci-yartu-doc</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-yartu-doc')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-yartu-doc">&lt;i class="ci-yartu-doc"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-yartu-doc')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-yartu-ppt" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-yartu-ppt"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-yartu-ppt">ci-yartu-ppt</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-yartu-ppt')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-yartu-ppt">&lt;i class="ci-yartu-ppt"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-yartu-ppt')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-yartu-sheet" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-yartu-sheet"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-yartu-sheet">ci-yartu-sheet</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-yartu-sheet')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-yartu-sheet">&lt;i class="ci-yartu-sheet"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-yartu-sheet')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+          <div id="item-zip" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-zip"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-zip">ci-zip</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-zip')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-zip">&lt;i class="ci-zip"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-zip')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-96 fixed z-20 flex flex-col flex-wrap right-0 top-0 bottom-0 max-w-sm h-full border border-gray-200 bg-white p-7">
+      
+      <div class="w-full h-80 bg-slate-100 border-slate-200 border rounded-2xl flex items-center justify-center">
+        <div id="selected" class="w-60 h-60 flex items-center justify-center text-[#9aa1b4] rounded-2xl" style="background-size: 4rem;">
+            <img class="h-10" src="/src/assets/logo/yartu-logo-horizontal.svg" alt="logo">
+        </div>
+      </div>
+      <div id="metadata" class="mt-2 font-semibold min-h-[122px] border rounded-2xl">
+        <div class=" p-4 py-7 font-normal">
+          <div class="flex flex-row items-center justify-between">
+            <div class="bg-slate-100 h-10 w-full rounded-2xl">
+            </div>
+          </div>
+          <div class="flex flex-row justify-between items-center mt-7">
+            <div class="bg-slate-100 h-10 w-full rounded-2xl">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mt-auto text-right">
+          <a href="/src/views/font-icons" type="button" class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-600 dark:focus:ring-blue-800">Switch To Font Icons</a>
+      </div>
+      </div>
+    </div>
+    <div id="snackbar">Copied</div>
+    <script src="/src/assets/js/search.js"></script>
+    <script src="/src/assets/js/select.js"></script>
+    <script src="/src/assets/js/copyToClipBoard.js"></script>
+</body>
+</html>

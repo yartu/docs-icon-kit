@@ -1,0 +1,10 @@
+{{#each icons}}
+.ci-{{../classPrefix}}{{@key}}::before {
+    content: '';
+	background: url("{{this.url}}") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+{{/each}}
