@@ -5,7 +5,7 @@ function CopyToClipboardFontIcon(id){
     body.appendChild(area);
     
     if(id.split("-")[0] === 'selector'){
-        let iconName = id.split("-")[1];
+        let iconName = id.replace(/selector-/g,"");
         let color = colorPicker.value;
         let iconSelector = `<i class="yi ${iconName}" style="color: ${color}"></i>`;
         area.value = iconSelector;
@@ -28,7 +28,8 @@ function CopyToClipboard(id){
     const area = document.createElement('textarea');
     body.appendChild(area);
     if(id.split("-")[0] === 'selector'){
-        let iconSelector = `<i class="ci-${id}"></i>`;
+        let name = id.replace(/selector-/g,"");
+        let iconSelector = `<i class="ci-${name}"></i>`;
         area.value = iconSelector;
     }
     else{
