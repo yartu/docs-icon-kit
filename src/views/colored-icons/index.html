@@ -66,6 +66,38 @@
             </div>
               </div>
           </div>
+          <div id="item-app" onclick="selected(this);" 
+            class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
+            <div>
+            <i class="ci-app"></i>
+            <div class="hidden p-4 py-7 font-normal">
+              <div class="flex flex-row items-center justify-between">
+                <div>
+                    <h6 class="font-semibold text-sm text-[#3663F2]">Icon name:</h6>
+                    <p class="text-xs icon-name text-gray-600" id="icon-name-app">ci-app</p>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('icon-name-app')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="flex flex-row justify-between items-center mt-7">
+                <div>
+                  <p class="text-sm font-semibold text-[#3663F2]"> Icon Selector </p>
+                <code class="font-sans text-xs text-gray-600">
+                  <span id="selector-app">&lt;i class="ci-app"&gt;&lt;/i&gt;</span> 
+                </code>
+                </div>
+                <div>
+                  <button type="button" class="text-blue-500 active:text-blue-700 font-semibold text-sm text-center" onclick="CopyToClipboard('selector-app')">
+                    <i class="yi copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+              </div>
+          </div>
           <div id="item-archive" onclick="selected(this);" 
             class="icons-container w-32 h-32 rounded-xl bg-white flex flex-col justify-center text-4xl items-center text-gray-400 py-6 cursor-pointer hover:shadow-xl border transition-all border-gray-200">
             <div>

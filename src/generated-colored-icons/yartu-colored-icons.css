@@ -6,6 +6,14 @@
     height: 40px;
     display: inline-block;
 }
+.ci-app::before {
+    content: '';
+	background: url("./colored-icons-svgs/app.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
 .ci-archive::before {
     content: '';
 	background: url("./colored-icons-svgs/archive.svg") no-repeat;
