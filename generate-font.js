@@ -24,7 +24,7 @@ fs.readdir('src/assets/font-icons-svgs/', function(err, items) {
     
     cssTemplate: './src/templates/font-icon-templates/font-css.hbs',
     templateOptions: {
-      classPrefix: '',
+      classPrefix: 'yi-',
       baseSelector: '.yi'
     },
     types: ['svg', 'ttf', 'woff', 'eot'],
