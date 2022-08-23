@@ -5,7 +5,9 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "generate": "node generate-colored-icons.js && node generate-font.js && npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --minify",
+    "watch": "npx tailwindcss -i ./src/assets/css/input.css -o ./assets/css/output.css --watch"
   },
   "dependencies": {
     "@vueuse/core": "^9.0.0",
@@ -14,6 +16,7 @@
     "vue-router": "^4.1.2"
   },
   "devDependencies": {
+    "@vusion/webfonts-generator": "^0.8.0",
     "@rushstack/eslint-patch": "^1.1.0",
     "@vitejs/plugin-vue": "^3.0.1",
     "@vue/eslint-config-prettier": "^7.0.0",

@@ -1,0 +1,9 @@
+
+{ "icons": [
+{{#each names}}
+  { "iconName": "{{this}}" },
+  {{#if @last}}
+    { "iconName": "{{this}}" }
+  {{/if}}
+{{/each}}
+] }
