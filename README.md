@@ -1,77 +1,35 @@
-# Yartu Icon Pack
-Yartu icon kit using https://www.npmjs.com/package/@vusion/webfonts-generator package for generate the font kit for more information visit there.
+# icon-kit
 
-## Installation
-    npm install
+This template should help get you started developing with Vue 3 in Vite.
 
-## Prepare svg icons
+## Recommended IDE Setup
 
-Svg icons should not have a stroke. If the icon pack have a corrupted icon you can convert strokes to fills in different vector editing programs:
+[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
-## Converting Strokes & Text to Fills
+## Customize configuration
 
-### Adobe Illustrator
-    Select the shapes that you want to convert and then choose Object → Expand. You might need to choose Object → Expand Appearance before you can apply Object → Expand.
+See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-### Ink Scape
-    Select the shapes that you want to convert and then choose Path → Stroke to Path.
+## Project Setup
 
-### Sketch
-    Select the shapes that you want to convert and choose Layer → Convert to Outlines
+```sh
+npm install
+```
 
-after that copy all icon svgs to yartu/icons folder. Thats it ready to generate font icons. 
+### Compile and Hot-Reload for Development
 
+```sh
+npm run dev
+```
 
-## Generate Font kit
-    npm run generate
+### Compile and Minify for Production
 
-## Usage
+```sh
+npm run build
+```
 
-1. Copy all generated files into the assets folder of your own project files.
+### Lint with [ESLint](https://eslint.org/)
 
-    Generated files is under the down below path
-
-        /src/generated-font-icons/
-        /src/generated-colored-icons/
-
-1. Import css files in your html
-        
-        <link rel="stylesheet" href="your-project-path/yartu-icons.css">
-        <link rel="stylesheet" href="your-project-path/yartu-colored-icons.css">
-
-1. Icon usage
-    ### For font icons
-    
-        <i class="yi arrow-right"></i>
-    ### For colored icons
-    
-        <i class="ci-empty-created-links"></i>
-
-## Templates
-Font kit css and html handlebars templates destination in down below 
-
-    src/templates
-
-## Output files
-### Font icons output files
-Output files under the /src/generated-font-icons/ path and this path includes this files.
-    
-        - yartu-icons.css
-        - yartu-icons.eot
-        - yartu-icons.svg
-        - yartu-icons.ttf
-        - yartu-icons.woff
-    
-### Colored icons output files
-    Output files under the /src/generated-colored-icons/ path and this path includes this files and folders.
-        - colored-icons/svgs/
-        - yartu-colored-icon-kit.css
-
-## Handlebars ( *.hbs )
-Handlebars is a simple templating language. It uses a template and an input object to generate HTML or other text formats. Handlebars templates look like regular text with embedded Handlebars expressions. For more information please visit https://handlebarsjs.com/guide/
-
-## Demo file
-Demo files destinations down below
-
-    /src/views/colored-icons/index.html
-    /src/views/font-icons/index.html
+```sh
+npm run lint
+```

@@ -1,10 +1,28 @@
 {
+  "name": "icon-kit",
+  "version": "0.0.0",
   "scripts": {
-    "generate": "node generate-colored-icons.js && node generate-font.js && npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --minify",
-    "watch": "npx tailwindcss -i ./src/assets/css/input.css -o ./assets/css/output.css --watch"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
+  },
+  "dependencies": {
+    "@vueuse/core": "^9.0.0",
+    "@yartu/ui-kit": "^1.0.0-beta.5",
+    "vue": "^3.2.37",
+    "vue-router": "^4.1.2"
   },
   "devDependencies": {
-    "@vusion/webfonts-generator": "^0.8.0",
-    "tailwindcss": "^3.0.22"
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@vitejs/plugin-vue": "^3.0.1",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "autoprefixer": "^10.4.7",
+    "eslint": "^8.5.0",
+    "eslint-plugin-vue": "^9.0.0",
+    "postcss": "^8.4.14",
+    "prettier": "^2.5.1",
+    "tailwindcss": "^3.1.6",
+    "vite": "^3.0.1"
   }
 }
