@@ -6,20 +6,21 @@
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
-    "generate": "node generate-colored-icons.js && node generate-font.js && npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --minify",
+    "generate": "node generate-colored-icons.js && node generate-font.js && node generate-zip.js && npx tailwindcss -i ./src/assets/css/input.css -o ./src/assets/css/output.css --minify",
     "watch": "npx tailwindcss -i ./src/assets/css/input.css -o ./assets/css/output.css --watch"
   },
   "dependencies": {
     "@vueuse/core": "^9.0.0",
     "@yartu/ui-kit": "^1.0.0-beta.5",
+    "jszip": "^3.10.1",
     "vue": "^3.2.37",
     "vue-router": "^4.1.2"
   },
   "devDependencies": {
-    "@vusion/webfonts-generator": "^0.8.0",
     "@rushstack/eslint-patch": "^1.1.0",
     "@vitejs/plugin-vue": "^3.0.1",
     "@vue/eslint-config-prettier": "^7.0.0",
+    "@vusion/webfonts-generator": "^0.8.0",
     "autoprefixer": "^10.4.7",
     "eslint": "^8.5.0",
     "eslint-plugin-vue": "^9.0.0",

@@ -54,9 +54,9 @@
   <SideBar :selectedIcon="selectedItem" @side-bar="openSidebar" :open="showSidebar" />
 </template>
 <script setup>
-import iconNames from "../../src/icons/colored-icons.json";
-import SideBar from "../components/SideBar.vue";
-import { ref } from "vue";
+import iconNames from '../../src/icons/colored-icons.json';
+import SideBar from '../components/SideBar.vue';
+import { ref } from 'vue';
 
 const selectedItem = ref();
 const showSidebar = ref(false);

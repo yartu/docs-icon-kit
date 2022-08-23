@@ -27,9 +27,9 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref } from 'vue';
 
-const filter = ref("");
+const filter = ref('');
 
 // onMounted(() => {
 //   console.log(filter.value)
@@ -41,20 +41,20 @@ function search() {
   // Declare variables
   let i,
     flag = false;
-  let iconsContainer = document.getElementsByClassName("icons-container");
-  let icons = document.getElementsByClassName("icon-name");
+  let iconsContainer = document.getElementsByClassName('icons-container');
+  let icons = document.getElementsByClassName('icon-name');
   // Loop through all list items, and hide those who don't match the search query
   for (i = 0; i < iconsContainer.length; i++) {
     let iconText = icons[i].innerText;
     if (iconText.indexOf(filter.value) > -1) {
-      iconsContainer[i].style.display = "";
+      iconsContainer[i].style.display = '';
     } else {
-      iconsContainer[i].style.display = "none";
+      iconsContainer[i].style.display = 'none';
     }
   }
 
   for (i = 0; i < iconsContainer.length; i++) {
-    if (iconsContainer[i].style.display != "none") {
+    if (iconsContainer[i].style.display != 'none') {
       flag = true;
     }
   }
