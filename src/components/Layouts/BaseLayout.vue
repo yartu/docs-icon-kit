@@ -5,5 +5,5 @@
   </div>
 </template>
 <script setup>
-import HeaderComp from "../HeaderComp.vue";
+import HeaderComp from '../HeaderComp.vue';
 </script>

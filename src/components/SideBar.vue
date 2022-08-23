@@ -57,8 +57,8 @@
             <p class="text-sm font-semibold text-[#3663F2]">Icon Selector</p>
             <code class="font-sans text-xs text-gray-600">
               <span ref="iconSelector" id="selector-{{selectedIcon}}"
-                >&lt;i class="{{ fontIcon ? "yi yi-" + selectedIcon + '"' : "ci-" + selectedIcon + '"'
-                }}{{ selectedColor == "#9aa1b4" ? "" : ' style="color:' + selectedColor + '"' }}&gt;&lt;/i&gt;</span
+                >&lt;i class="{{ fontIcon ? 'yi yi-' + selectedIcon + '"' : 'ci-' + selectedIcon + '"'
+                }}{{ selectedColor == '#9aa1b4' ? '' : ' style="color:' + selectedColor + '"' }}&gt;&lt;/i&gt;</span
               >
             </code>
           </div>
@@ -93,15 +93,15 @@
 </template>
 
 <script setup>
-import { ref, watch } from "vue";
-import { useClipboard } from "@vueuse/core";
+import { ref, watch } from 'vue';
+import { useClipboard } from '@vueuse/core';
 
 const iconName = ref(null);
 const iconSelector = ref(null);
 const source = ref(null);
 const snackbar = ref(false);
 const showSidebar = ref(true);
-const selectedColor = ref("#9aa1b4");
+const selectedColor = ref('#9aa1b4');
 
 // eslint-disable-next-line no-unused-vars
 const { text, copy, copied, isSupported } = useClipboard({ source });
@@ -109,26 +109,26 @@ const { text, copy, copied, isSupported } = useClipboard({ source });
 const props = defineProps({
   fontIcon: {
     type: Boolean,
-    default: false,
+    default: false
   },
   selectedIcon: {
     type: String,
-    default: "",
+    default: ''
   },
   open: {
     type: Boolean,
-    default: false,
-  },
+    default: false
+  }
 });
 
-const emit = defineEmits(["sideBar"]);
+const emit = defineEmits(['sideBar']);
 
 function openSidebar() {
-  emit("sideBar", true);
+  emit('sideBar', true);
 }
 
 function copyComponentToClipboard(selected) {
-  if (selected == "iconName") {
+  if (selected == 'iconName') {
     source.value = iconName.value.innerText;
   } else {
     source.value = iconSelector.value.innerText;
@@ -145,7 +145,7 @@ watch(
   // eslint-disable-next-line no-unused-vars
   (newVal, oldVal) => {
     showSidebar.value = !newVal;
-  },
+  }
 );
 
 // watch(props.open, () => {
