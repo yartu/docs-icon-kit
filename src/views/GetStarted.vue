@@ -21,8 +21,8 @@
       <br />
     </div>
     <div class="flex flex-wrap flex-col gap-2 text-center underline text-BLUE">
-      <a href="/yartu-icons.zip" download>Download Icons</a>
-      <a href="/yartu-colored-icons.zip" download>Download Colored Icons</a>
+      <a href="yartu-icons.zip" download>Download Icons</a>
+      <a href="yartu-colored-icons.zip" download>Download Colored Icons</a>
     </div>
     <hr />
     <div class="w-1/2 h-[1px] block bg-slate-200"></div>
