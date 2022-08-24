@@ -1,11 +1,11 @@
-import { createRouter } from 'vue-router';
+import { createRouter, createWebHashHistory } from 'vue-router';
 import BaseLayout from '@/components/Layouts/BaseLayout.vue';
 import FontIcons from '@/views/FontIcons.vue';
 import ColoredIcons from '@/views/ColoredIcons.vue';
 import GetStarted from '@/views/GetStarted.vue';
 
 const router = createRouter({
-  history: false,
+  history: createWebHashHistory(),
   routes: [
     {
       path: '/',
