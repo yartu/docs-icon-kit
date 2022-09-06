@@ -1,3 +1,11 @@
+.ci-::before {
+    content: '';
+	background: url("./colored-icons-svgs/.DS_Store") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
 .ci-added-devices::before {
     content: '';
 	background: url("./colored-icons-svgs/added-devices.svg") no-repeat;
@@ -169,6 +177,14 @@
 .ci-hail::before {
     content: '';
 	background: url("./colored-icons-svgs/hail.svg") no-repeat;
+    background-size: 40px 40px; 
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+}
+.ci-hand-wave::before {
+    content: '';
+	background: url("./colored-icons-svgs/hand-wave.svg") no-repeat;
     background-size: 40px 40px; 
     width: 40px;
     height: 40px;
@@ -518,14 +534,6 @@
     height: 40px;
     display: inline-block;
 }
-.ci-shared-by-you::before {
-    content: '';
-	background: url("./colored-icons-svgs/shared-by-you.svg") no-repeat;
-    background-size: 40px 40px; 
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-}
 .ci-shared-folder::before {
     content: '';
 	background: url("./colored-icons-svgs/shared-folder.svg") no-repeat;
@@ -537,14 +545,6 @@
 .ci-shared-with-me::before {
     content: '';
 	background: url("./colored-icons-svgs/shared-with-me.svg") no-repeat;
-    background-size: 40px 40px; 
-    width: 40px;
-    height: 40px;
-    display: inline-block;
-}
-.ci-shared-with-you::before {
-    content: '';
-	background: url("./colored-icons-svgs/shared-with-you.svg") no-repeat;
     background-size: 40px 40px; 
     width: 40px;
     height: 40px;
