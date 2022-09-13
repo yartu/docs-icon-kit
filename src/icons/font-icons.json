@@ -157,6 +157,7 @@
   { "iconName": "remove-cover" },
   { "iconName": "rename" },
   { "iconName": "repeat" },
+  { "iconName": "reply-all" },
   { "iconName": "reply" },
   { "iconName": "repository" },
   { "iconName": "restore" },

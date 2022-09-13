@@ -1,10 +1,10 @@
 @font-face {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "yartu-icons";
-  src: url("yartu-icons.eot?5b99356591aa20359c5bf23a898db647?#iefix") format("embedded-opentype"),
-url("yartu-icons.woff?5b99356591aa20359c5bf23a898db647") format("woff"),
-url("yartu-icons.ttf?5b99356591aa20359c5bf23a898db647") format("truetype"),
-url("yartu-icons.svg?5b99356591aa20359c5bf23a898db647#yartu-icons") format("svg");
+  src: url("yartu-icons.eot?25bfa2aa89a1030d90ffc6f8bbaa0cab?#iefix") format("embedded-opentype"),
+url("yartu-icons.woff?25bfa2aa89a1030d90ffc6f8bbaa0cab") format("woff"),
+url("yartu-icons.ttf?25bfa2aa89a1030d90ffc6f8bbaa0cab") format("truetype"),
+url("yartu-icons.svg?25bfa2aa89a1030d90ffc6f8bbaa0cab#yartu-icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -499,171 +499,174 @@ url("yartu-icons.svg?5b99356591aa20359c5bf23a898db647#yartu-icons") format("svg"
 .yi-repeat:before {
   content: "\f19d";
 }
-.yi-reply:before {
+.yi-reply-all:before {
   content: "\f19e";
 }
-.yi-repository:before {
+.yi-reply:before {
   content: "\f19f";
 }
-.yi-restore:before {
+.yi-repository:before {
   content: "\f1a0";
 }
-.yi-rotate-screen:before {
+.yi-restore:before {
   content: "\f1a1";
 }
-.yi-search:before {
+.yi-rotate-screen:before {
   content: "\f1a2";
 }
-.yi-sections:before {
+.yi-search:before {
   content: "\f1a3";
 }
-.yi-send-with-email:before {
+.yi-sections:before {
   content: "\f1a4";
 }
-.yi-set-cover:before {
+.yi-send-with-email:before {
   content: "\f1a5";
 }
-.yi-set-deadline:before {
+.yi-set-cover:before {
   content: "\f1a6";
 }
-.yi-set-password:before {
+.yi-set-deadline:before {
   content: "\f1a7";
 }
-.yi-shared-address-book:before {
+.yi-set-password:before {
   content: "\f1a8";
 }
-.yi-shared-note:before {
+.yi-shared-address-book:before {
   content: "\f1a9";
 }
-.yi-shared-project:before {
+.yi-shared-note:before {
   content: "\f1aa";
 }
-.yi-shared-with-me:before {
+.yi-shared-project:before {
   content: "\f1ab";
 }
-.yi-sign-out:before {
+.yi-shared-with-me:before {
   content: "\f1ac";
 }
-.yi-spam:before {
+.yi-sign-out:before {
   content: "\f1ad";
 }
-.yi-star-filled:before {
+.yi-spam:before {
   content: "\f1ae";
 }
-.yi-star:before {
+.yi-star-filled:before {
   content: "\f1af";
 }
-.yi-sticky-note:before {
+.yi-star:before {
   content: "\f1b0";
 }
-.yi-strike-through:before {
+.yi-sticky-note:before {
   content: "\f1b1";
 }
-.yi-sub-notebook:before {
+.yi-strike-through:before {
   content: "\f1b2";
 }
-.yi-table-cells:before {
+.yi-sub-notebook:before {
   content: "\f1b3";
 }
-.yi-task:before {
+.yi-table-cells:before {
   content: "\f1b4";
 }
-.yi-text-color:before {
+.yi-task:before {
   content: "\f1b5";
 }
-.yi-text:before {
+.yi-text-color:before {
   content: "\f1b6";
 }
-.yi-time:before {
+.yi-text:before {
   content: "\f1b7";
 }
-.yi-to-folder:before {
+.yi-time:before {
   content: "\f1b8";
 }
-.yi-todo-list:before {
+.yi-to-folder:before {
   content: "\f1b9";
 }
-.yi-transfer:before {
+.yi-todo-list:before {
   content: "\f1ba";
 }
-.yi-trash:before {
+.yi-transfer:before {
   content: "\f1bb";
 }
-.yi-unarchive:before {
+.yi-trash:before {
   content: "\f1bc";
 }
-.yi-unchecked:before {
+.yi-unarchive:before {
   content: "\f1bd";
 }
-.yi-underline:before {
+.yi-unchecked:before {
   content: "\f1be";
 }
-.yi-undo:before {
+.yi-underline:before {
   content: "\f1bf";
 }
-.yi-unlock:before {
+.yi-undo:before {
   content: "\f1c0";
 }
-.yi-unorder-list:before {
+.yi-unlock:before {
   content: "\f1c1";
 }
-.yi-unstar:before {
+.yi-unorder-list:before {
   content: "\f1c2";
 }
-.yi-upload:before {
+.yi-unstar:before {
   content: "\f1c3";
 }
-.yi-uploading:before {
+.yi-upload:before {
   content: "\f1c4";
 }
-.yi-upward:before {
+.yi-uploading:before {
   content: "\f1c5";
 }
-.yi-user:before {
+.yi-upward:before {
   content: "\f1c6";
 }
-.yi-vacation:before {
+.yi-user:before {
   content: "\f1c7";
 }
-.yi-video-off:before {
+.yi-vacation:before {
   content: "\f1c8";
 }
-.yi-video-recording:before {
+.yi-video-off:before {
   content: "\f1c9";
 }
-.yi-video:before {
+.yi-video-recording:before {
   content: "\f1ca";
 }
-.yi-view-in-folder:before {
+.yi-video:before {
   content: "\f1cb";
 }
-.yi-volume-up:before {
+.yi-view-in-folder:before {
   content: "\f1cc";
 }
-.yi-web:before {
+.yi-volume-up:before {
   content: "\f1cd";
 }
-.yi-wind:before {
+.yi-web:before {
   content: "\f1ce";
 }
-.yi-windows:before {
+.yi-wind:before {
   content: "\f1cf";
 }
-.yi-work-from-home:before {
+.yi-windows:before {
   content: "\f1d0";
 }
-.yi-workflow:before {
+.yi-work-from-home:before {
   content: "\f1d1";
 }
-.yi-working-outside:before {
+.yi-workflow:before {
   content: "\f1d2";
 }
-.yi-working-status:before {
+.yi-working-outside:before {
   content: "\f1d3";
 }
-.yi-zoom-in:before {
+.yi-working-status:before {
   content: "\f1d4";
 }
-.yi-zoom-out:before {
+.yi-zoom-in:before {
   content: "\f1d5";
+}
+.yi-zoom-out:before {
+  content: "\f1d6";
 }
