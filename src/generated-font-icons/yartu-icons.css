@@ -1,10 +1,10 @@
 @font-face {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "yartu-icons";
-  src: url("yartu-icons.eot?edcdc56844ae3a0d170b64b383e7e107?#iefix") format("embedded-opentype"),
-url("yartu-icons.woff?edcdc56844ae3a0d170b64b383e7e107") format("woff"),
-url("yartu-icons.ttf?edcdc56844ae3a0d170b64b383e7e107") format("truetype"),
-url("yartu-icons.svg?edcdc56844ae3a0d170b64b383e7e107#yartu-icons") format("svg");
+  src: url("yartu-icons.eot?9c7af71ca8274bcdbe3566699a48412a?#iefix") format("embedded-opentype"),
+url("yartu-icons.woff?9c7af71ca8274bcdbe3566699a48412a") format("woff"),
+url("yartu-icons.ttf?9c7af71ca8274bcdbe3566699a48412a") format("truetype"),
+url("yartu-icons.svg?9c7af71ca8274bcdbe3566699a48412a#yartu-icons") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -625,51 +625,54 @@ url("yartu-icons.svg?edcdc56844ae3a0d170b64b383e7e107#yartu-icons") format("svg"
 .yi-upward:before {
   content: "\f1c7";
 }
-.yi-user:before {
+.yi-user-switch:before {
   content: "\f1c8";
 }
-.yi-vacation:before {
+.yi-user:before {
   content: "\f1c9";
 }
-.yi-video-off:before {
+.yi-vacation:before {
   content: "\f1ca";
 }
-.yi-video-recording:before {
+.yi-video-off:before {
   content: "\f1cb";
 }
-.yi-video:before {
+.yi-video-recording:before {
   content: "\f1cc";
 }
-.yi-view-in-folder:before {
+.yi-video:before {
   content: "\f1cd";
 }
-.yi-volume-up:before {
+.yi-view-in-folder:before {
   content: "\f1ce";
 }
-.yi-web:before {
+.yi-volume-up:before {
   content: "\f1cf";
 }
-.yi-wind:before {
+.yi-web:before {
   content: "\f1d0";
 }
-.yi-windows:before {
+.yi-wind:before {
   content: "\f1d1";
 }
-.yi-work-from-home:before {
+.yi-windows:before {
   content: "\f1d2";
 }
-.yi-workflow:before {
+.yi-work-from-home:before {
   content: "\f1d3";
 }
-.yi-working-outside:before {
+.yi-workflow:before {
   content: "\f1d4";
 }
-.yi-working-status:before {
+.yi-working-outside:before {
   content: "\f1d5";
 }
-.yi-zoom-in:before {
+.yi-working-status:before {
   content: "\f1d6";
 }
-.yi-zoom-out:before {
+.yi-zoom-in:before {
   content: "\f1d7";
+}
+.yi-zoom-out:before {
+  content: "\f1d8";
 }
