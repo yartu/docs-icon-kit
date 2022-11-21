@@ -45,6 +45,7 @@
   { "iconName": "convert-note" },
   { "iconName": "copy" },
   { "iconName": "cpu" },
+  { "iconName": "critical" },
   { "iconName": "delete-column" },
   { "iconName": "delete-row" },
   { "iconName": "delete-table" },
