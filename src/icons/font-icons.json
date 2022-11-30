@@ -172,6 +172,7 @@
   { "iconName": "reset-password" },
   { "iconName": "restore" },
   { "iconName": "rotate-screen" },
+  { "iconName": "save" },
   { "iconName": "search" },
   { "iconName": "sections" },
   { "iconName": "send-with-email" },
